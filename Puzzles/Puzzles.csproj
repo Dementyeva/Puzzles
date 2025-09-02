@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DB7AB951-0216-442A-83C9-BD4A3E886FEB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Puzzles</RootNamespace>
+    <AssemblyName>Puzzles</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Arithmetic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arithmetic.Designer.cs">
+      <DependentUpon>Arithmetic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Puzle.cs" />
+    <Compile Include="FindCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindCard.Designer.cs">
+      <DependentUpon>FindCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sydoka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sydoka.Designer.cs">
+      <DependentUpon>Sydoka.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Arithmetic.resx">
+      <DependentUpon>Arithmetic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindCard.resx">
+      <DependentUpon>FindCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sydoka.resx">
+      <DependentUpon>Sydoka.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scale_1200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_2025-04-21_13-37-18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lovepik-alien-png-image_400176067_wh1200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_2025-04-21_13-56-56.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-png.ru-666.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-youtube-alien-extraterrestrial-life-alien-purple-iron-man.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-red-planet-planet-red-planet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beautiful-earth-elements-png_232338.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_2025-04-21_16-24-45.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_2025-04-21_16-32-43.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_2025-04-21_16-51-12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\61.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\71.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\331.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_2025-04-29_10-27-39.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_2025-04-29_10-27-391.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_2025-04-29_10-32-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sinenka-kvitka-jurij-jarmish.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sinenka-kvitka-jurij-jarmish1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\foni-papik-pro-d5g0-p-kartinki-tsvetochki-na-prozrachnom-fone-12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sound_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\sound_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\sound_off.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\sound_off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\завантаження.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\70e5c37ed388f75f54ebe5cd65254c111.gif" />
+    <None Include="Resources\70e5c37ed388f75f54ebe5cd65254c11.gif" />
+    <Content Include="Resources\cat.gif" />
+    <None Include="Resources\gifki-s-kotikami-bez-fona-1.gif" />
+    <None Include="Resources\cat2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cat1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDictionary Include="Resources\kotik-begaet-po-ekranu-1.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </CodeAnalysisDictionary>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
