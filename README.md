@@ -57,6 +57,6 @@ Players must match identical card pairs.
     TableLayoutPanel dynamic grid
 
 ![Game Screenshot](1.jpg)
-![Game Screenshot](2.png)
+![Game Screenshot](2.jpg)
 ![Game Screenshot](3.jpg)
-![Game Screenshot](4.png)
+![Game Screenshot](4.jpg)
