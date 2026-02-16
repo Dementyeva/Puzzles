@@ -33,10 +33,10 @@ Highlight:
 🧮 Arithmetic Puzzle
 📌 Description
 A logic puzzle where players must restore missing arithmetic operators (+, -, *, /) in a grid so that:
-Each row produces the correct result
-Each column produces the correct result
+Each row produces the correct result.
+Each column produces the correct result.
 
-🧠 How It Works
+🧠 How It Works?
   Numbers are pre-generated.
   Result labels are shown:
   Blue → Row results
@@ -44,7 +44,7 @@ Each column produces the correct result
   User inputs operators into empty cells.
   System checks correctness against solution.
 
-🃏 Find the Pair
+🃏 Find the Pair.
 A memory card matching game .
 Players must match identical card pairs.
 
